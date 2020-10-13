@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"offroad\startup_stm32f103xb.o"
+"offroad\main.o"
+"offroad\stm32f1xx_it.o"
+"offroad\stm32f1xx_hal_msp.o"
+"offroad\stm32f1xx_hal_gpio_ex.o"
+"offroad\stm32f1xx_hal_tim.o"
+"offroad\stm32f1xx_hal_tim_ex.o"
+"offroad\stm32f1xx_hal.o"
+"offroad\stm32f1xx_hal_rcc.o"
+"offroad\stm32f1xx_hal_rcc_ex.o"
+"offroad\stm32f1xx_hal_gpio.o"
+"offroad\stm32f1xx_hal_dma.o"
+"offroad\stm32f1xx_hal_cortex.o"
+"offroad\stm32f1xx_hal_pwr.o"
+"offroad\stm32f1xx_hal_flash.o"
+"offroad\stm32f1xx_hal_flash_ex.o"
+"offroad\stm32f1xx_hal_exti.o"
+"offroad\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "offroad\offroad.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "offroad.map" -o offroad\offroad.axf
